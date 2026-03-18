@@ -15,7 +15,7 @@ addLayer("a", {
     baseResource: "Points", // Base resource name
     baseAmount() { return player.points }, // Get current base resource amount
     type: "static", // Type: static resource layer
-    exponent: 1, // Prestige currency exponent
+    exponent: 0, // Prestige currency exponent
     gainMult() { // Multiplier for main currency
         mult = new Decimal(1)
         return mult
