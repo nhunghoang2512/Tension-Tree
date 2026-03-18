@@ -10,7 +10,7 @@ addLayer("a", {
         }
     },
     color: "#ff0000ff",
-    requires: new Decimal(1e25), // Requirement to unlock
+    requires: new Decimal(0), // Requirement to unlock
     resource: "Impact Points", // Prestige currency name
     baseResource: "Points", // Base resource name
     baseAmount() { return player.points }, // Get current base resource amount
