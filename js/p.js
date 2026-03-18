@@ -47,7 +47,7 @@ addLayer("p", {
         return exp
     },
     eff() {
-        let eff = player.p.points.add(1).log10().mul(0.1).add(1)
+        let eff = player.p.points.add(1).log10().mul(10).add(1)
         if(hasMilestone("a",28)) eff = eff.mul(player.a.milestones.length / 25)
         eff = eff.pow(buyableEffect("p",12))
         if(hasUpgrade("p",33)) eff = eff.pow(upgradeEffect("p",33))
