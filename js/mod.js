@@ -37,11 +37,11 @@ function canGenPoints(){
 // Calculate points/sec!
 function getPointGen() {
 let gain = new Decimal(layers.p.eff())
-		if(hasUpgrade("p",11))gain=gain.pow(20)
-		if(hasUpgrade("p",12))gain=gain.pow(20)
-		if(hasUpgrade("p",13))gain=gain.pow(20)
-		if(hasUpgrade("p",14))gain=gain.pow(20)
-		if(hasUpgrade("p",15))gain=gain.pow(20)
+		if(hasUpgrade("p",11))gain=gain.pow(21230)
+		if(hasUpgrade("p",12))gain=gain.pow(21230)
+		if(hasUpgrade("p",13))gain=gain.pow(21230)
+		if(hasUpgrade("p",14))gain=gain.pow(21230)
+		if(hasUpgrade("p",15))gain=gain.pow(21230)
 if(hasUpgrade("f",14))gain=gain.pow(upgradeEffect("f",14))
 if(hasUpgrade("s",11))gain=gain.mul(upgradeEffect("s",11))
 gain=gain.mul(buyableEffect("p",11))
