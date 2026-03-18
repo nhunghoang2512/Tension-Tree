@@ -21,7 +21,7 @@ addLayer("a", {
         return mult
     },
     spg() { // Calculate impact fragment generation
-        sp = player.a.points.mul(player.points.add(10).log10())
+        sp = player.a.points.pow(player.points.add(10).log10())
         if(hasMilestone("a",4)) sp = sp.mul(player.p.points.add(10).log10())
         if(hasMilestone("a",9)) sp = sp.mul(player.f.points.add(10).log10())
         if(hasMilestone("a",6)) sp = sp.mul(player.a.milestones.length+1)
